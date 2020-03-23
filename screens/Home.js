@@ -1,20 +1,18 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import Styles from '../constants/Styles';
 
 const HomeScreen = () => {
+  const {navigate} = useNavigation();
   return (
-    <View style={styles.container}>
-      <Text>Home Screen</Text>
+    <View style={Styles.container}>
+      <Text style={Styles.title}>Home Screen</Text>
+      <TouchableOpacity onPress={() => navigate('Details', {data: 'Potato 🥔'})}>
+        <Text>Go to Details Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default HomeScreen;

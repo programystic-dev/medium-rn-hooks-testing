@@ -1,20 +1,17 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
+import Styles from '../constants/Styles';
+import {useRoute} from '@react-navigation/native';
 
 const DetailsScreen = () => {
+  const {params} = useRoute();
+  const {data} = params;
   return (
-    <View style={styles.container}>
-      <Text>Details Screen</Text>
+    <View style={Styles.container}>
+      <Text style={Styles.title}>Details Screen</Text>
+      <Text>Data passed: {data}</Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default DetailsScreen;
