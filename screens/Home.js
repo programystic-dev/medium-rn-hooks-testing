@@ -8,7 +8,8 @@ const HomeScreen = () => {
   return (
     <View style={Styles.container}>
       <Text style={Styles.title}>Home Screen</Text>
-      <TouchableOpacity onPress={() => navigate('Details', {data: 'Potato 🥔'})}>
+      <TouchableOpacity
+        onPress={() => navigate('Details', {data: 'Potato 🥔'})}>
         <Text>Go to Details Screen</Text>
       </TouchableOpacity>
     </View>

@@ -5,7 +5,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {DetailsScreen, HomeScreen} from './screens';
 
 const Stack = createStackNavigator();
-
 const App = () => {
   return (
     <NavigationContainer>
