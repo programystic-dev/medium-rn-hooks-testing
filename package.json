@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --silent",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -38,7 +38,8 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!((jest-)?react-native|react-navigation|@react-native-community/masked-view|@react-navigation/.*))",
-      "./__tests__/mocks"
-    ]
+      "__tests__/mocks"
+    ],
+    "modulePathIgnorePatterns": ["./__tests__/mocks"]
   }
 }
