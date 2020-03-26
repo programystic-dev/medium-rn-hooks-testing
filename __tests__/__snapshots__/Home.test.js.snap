@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Details should render correctly 1`] = `
+exports[`Home should render correctly 1`] = `
 <View
   style={
     Object {
@@ -320,50 +320,5 @@ exports[`Details should render correctly 1`] = `
       </View>
     </View>
   </RNCSafeAreaView>
-</View>
-`;
-
-exports[`Home should render correctly 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "fontSize": 18,
-        "fontWeight": "bold",
-        "marginBottom": 15,
-      }
-    }
-  >
-    Home Screen
-  </Text>
-  <View
-    accessible={true}
-    focusable={true}
-    isTVSelectable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      Object {
-        "opacity": 1,
-      }
-    }
-  >
-    <Text>
-      Go to Details Screen
-    </Text>
-  </View>
 </View>
 `;
